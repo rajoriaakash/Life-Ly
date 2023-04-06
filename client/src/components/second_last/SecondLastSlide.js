@@ -9,12 +9,17 @@ import about2 from "../../images/about_2.png";
 import about3 from "../../images/about_3.png";
 import about4 from "../../images/about_4.png";
 import Header from "../pages/Header/Header.js";
+<<<<<<< HEAD
 import Footer from "../pages/Footer/Footer.js";
 import { useNavigate } from 'react-router-dom'
 
 export default function SecondLastSlide(props) {
   const navigate = useNavigate()
 
+=======
+import Footer from "../pages/Footer/Footer";
+export default function SecondLastSlide(props) {
+>>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
   document.body.style.zoom = "50%";
   return (
     //col-md-6
@@ -35,12 +40,15 @@ export default function SecondLastSlide(props) {
             control your behavior. It happens in children and teens and can
             continue into adulthood.
           </p>
+<<<<<<< HEAD
           <a
             className="anchor"
             href="https://www.cdc.gov/ncbddd/adhd/facts.html#:~:text=ADHD%20is%20one%20of%20the,)%2C%20or%20be%20overly%20active."
           >
             Read More...
           </a>
+=======
+>>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
         </div>
 
         <div className="div2">
@@ -55,12 +63,15 @@ export default function SecondLastSlide(props) {
               years and can last throughout a person’s life, although symptoms
               may improve over time.
             </p>
+<<<<<<< HEAD
             <a
               className="anchor"
               href="https://www.cdc.gov/ncbddd/autism/facts.html#:~:text=Autism%20spectrum%20disorder%20(ASD)%20is,most%20common%20ways%20people%20develop."
             >
               Read More...
             </a>
+=======
+>>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
           </div>
         </div>
         <div className="div3">
@@ -74,17 +85,21 @@ export default function SecondLastSlide(props) {
               due to problems identifying speech sounds and learning how they
               relate to letters and words (decoding).
             </p>
+<<<<<<< HEAD
             <a
               className="anchor"
               href="https://www.mayoclinic.org/diseases-conditions/dyslexia/symptoms-causes/syc-20353552#:~:text=Dyslexia%20is%20a%20learning%20disorder,the%20brain%20that%20process%20language."
             >
               Read More...
             </a>
+=======
+>>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
           </div>
         </div>
         <h1 className="heading2">Government Schemes</h1>
         <div className="div4">
           <img src={about4} className="img4" alt="about-4" />
+<<<<<<< HEAD
           <li>
             <a href="https://vikaspedia.in/social-welfare/differently-abled-welfare/schemes-programmes/schemes-of-the-national-trust/disha">
               DISHA - Early Intervention and School Readiness
@@ -136,6 +151,22 @@ export default function SecondLastSlide(props) {
           <a href="http://www.nhfdc.nic.in/">
             <b>NHFDC</b>
           </a>
+=======
+          <li>DISHA - Early Intervention and School Readiness Scheme</li>
+          <li>VIKAAS - Day Care</li>
+          <li>SAMARTH - Respite Care</li>
+          <li> GHARAUNDA - Group Home for Adults</li>
+          <li> NIRAMAYA -Health Insurance Scheme</li>
+          <li>SAHYOGI - Caregiver training Scheme</li>
+          <li> GYAN PRABHA -Educational support</li>
+          <li>PRERNA - Marketing Assistance</li>
+          <li>SAMBHAV - Aids and Assistive</li>
+          <li>Devices </li>
+          <br />
+          <b>ADIP Scheme </b>
+          <br />
+          <b>NHFDC</b>
+>>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
         </div>
         <h1 className="heading2">Government Oppurtunities</h1>
         <div className="div5">
@@ -146,7 +177,11 @@ export default function SecondLastSlide(props) {
             disabilities from seven to 21.
           </p>
         </div>
+<<<<<<< HEAD
         <button type="button" className="btttn" onClick={()=> navigate('/schools',{replace:true} )}>
+=======
+        <button type="button" className="btttn">
+>>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
           Know more about Integrated Schools
         </button>
       </div>
