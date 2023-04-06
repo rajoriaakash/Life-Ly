@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./review.css";
 import img1 from "../../../images/review.png";
 import axios from "axios";
-<<<<<<< HEAD
 import { SERVER_URL } from '../../../config.js';
 import { Link, useNavigate } from 'react-router-dom'
 
@@ -13,14 +12,6 @@ export default function Review() {
     name: "",
     email: "",
     rating: "",
-=======
-
-export default function Review() {
-  const [user, setUser] = useState({
-    name: "",
-    email: "",
-    star: "",
->>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
     review: "",
   });
   function handleChange(e) {
@@ -30,21 +21,11 @@ export default function Review() {
       [name]: value,
     });
   }
-<<<<<<< HEAD
   const addReview = () => {
     console.log(user)
     axios.post(`${SERVER_URL}/review/add`, user).then((res) => {
         console.log(res.data);
         navigate('/', { replace: true })
-=======
-  const loginDataSend = async() => {
-    await axios.post("/review", user).then((res) => {
-        console.log(res.data);
-      if (user.email != null) {
-      } else {
-        alert("Error");
-      }
->>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
     });
   };
 
@@ -146,11 +127,7 @@ export default function Review() {
               <input
                 type="button"
                 className="login-btn"
-<<<<<<< HEAD
                 onClick={addReview}
-=======
-                onClick={loginDataSend}
->>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
                 value="ADD"
                 name="login"
               ></input>

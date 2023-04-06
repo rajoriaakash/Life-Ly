@@ -1,17 +1,12 @@
 import React, { useState } from 'react'
 import './appointment.css'
 import appoint from '../../../images/appointment.png'
-<<<<<<< HEAD
 import { useLocation } from 'react-router-dom'
 import axios from "axios";
 export default function Appointment(props) {
     const location = useLocation()
     const data = location.state?.data
     console.log(data)
-=======
-import axios from "axios";
-export default function Appointment(props) {
->>>>>>> 4315025b4fa753e405e6982f87901290e17494ed
     const [user, setUser] = useState({
         name: "",
         email: "",
