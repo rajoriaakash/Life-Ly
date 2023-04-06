@@ -10,7 +10,7 @@ import SecondLastSlide from "./components/second_last/SecondLastSlide";
 import Survey from "./components/survey/Survey";
 import Register from "./components/survey/register.js";
 import Register2 from "./components/survey/Register2.js";
-import Specialist from "./components/pages/specialist/Specialist.js";
+import Specialist from "./components/pages/specialist/specialist.js";
 import YourReport from "./components/pages/report/YourReport.js";
 import Review from "./components/pages/reviewsec/review";
 import Expage from './components/pages/Exercises/Expage'
