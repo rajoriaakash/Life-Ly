@@ -6,7 +6,9 @@ export const get_percentage = async (req, res) => {
         result
       } = req.body;
       // convert gender
-      const gender = result[0] === '1' ? 'f' : 'm';
+      console.log(req.body.result)
+      console.log(req.body)
+      const gender = result[0] == 1 ? "f" : "m";
 
       // convert autism
       const autism = [];
@@ -92,8 +94,11 @@ export const get_percentage = async (req, res) => {
       const predictionString = autismResponse.data.prediction;
       const predictionArray = predictionString.split(' ');
       const autism_probab = parseFloat(predictionArray[1].replace(']', '').trim());
-      const autism_percent = autism_probab *100;
-  
+      var autism_percent = autism_probab *100;
+      if(autism_percent<1)autism_percent=autism_percent*100;
+      console.log(autism_percent)
+      console.log(adhd_percent)
+      console.log(dyslexia_percent)
       const survey_result = new SurveyResult({
         autism_percent: autism_percent,
         adhd_percent: adhd_percent,

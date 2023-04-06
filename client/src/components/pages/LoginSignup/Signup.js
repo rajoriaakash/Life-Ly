@@ -28,7 +28,7 @@ function Signup () {
         if (res.data === 1) {
           localStorage.setItem('user', user.email)
         }
-        navigate('/', { replace: true })
+        navigate('/survey', { replace: true })
       })
     } else {
       alert('Please enter all credentials')

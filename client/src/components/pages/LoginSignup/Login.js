@@ -3,12 +3,9 @@ import React, { useState, useEffect } from 'react'
 import { gapi } from 'gapi-script'
 import axios from 'axios'
 import './login.css'
-import { GoogleLogin, GoogleLogout } from 'react-google-login'
 import { Link, useNavigate } from 'react-router-dom'
 import loginimage from '../../../images/login-image.png'
-
-const clientId =
-  '844876409508-6q7c4i2ruj575eapu43ji11k3ka1ho94.apps.googleusercontent.com'
+import { SERVER_URL } from '../../../config.js';
 
 const Login = ({ loginUser }) => {
   const navigate = useNavigate()
@@ -23,12 +20,13 @@ const Login = ({ loginUser }) => {
       [name]: value
     })
   }
+
   const loginDataSend = () => {
-    axios.post('/login', user).then(res => {
+    axios.post(`${SERVER_URL}/auth/login`, user).then(res => {
       if (user.email != null) {
         loginUser(user.email)
         localStorage.setItem('user', user.email)
-        navigate('/', { replace: true })
+        navigate('/survey', { replace: true })
       } else {
         navigate('/signup', { replace: true })
       }
